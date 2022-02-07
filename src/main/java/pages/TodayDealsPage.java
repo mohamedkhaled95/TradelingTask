@@ -13,13 +13,7 @@ public class TodayDealsPage extends PageBase {
 
 
     By televisionsSection = By.xpath("//a[@aria-label='Smart Televisions']");
-    private Properties properties;
 
-
-    public TodayDealsPage(WebDriver driver, Properties properties) {
-        super(driver);
-        this.properties = properties;
-    }
 
     public TodayDealsPage(WebDriver driver) {
         super(driver);
@@ -29,7 +23,7 @@ public class TodayDealsPage extends PageBase {
         clickElement(By.xpath("//span[contains(text(),'"+department+"')]"));
        return driver.findElement(By.xpath("//span[contains(text(),'"+department+"')]//preceding::input[1]")).isSelected();
     }
-//span[contains(text(),'Software')]/ancestor::node()[1]
+
 
 
 }
