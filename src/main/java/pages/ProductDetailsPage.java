@@ -16,13 +16,7 @@ public class ProductDetailsPage extends PageBase {
     By shippingDetailsField= By.id("amazonGlobal_feature_div");
     By addToCartButton = By.id("add-to-cart-button");
     By successMessageField = By.xpath("//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold']");
-    private Properties properties;
 
-
-    public ProductDetailsPage(WebDriver driver, Properties properties) {
-        super(driver);
-        this.properties = properties;
-    }
 
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
