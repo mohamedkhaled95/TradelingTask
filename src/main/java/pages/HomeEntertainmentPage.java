@@ -16,13 +16,7 @@ public class HomeEntertainmentPage extends PageBase {
 
 
     By televisionsSection = By.xpath("//img[@alt='Smart Televisions']");
-    private Properties properties;
 
-
-    public HomeEntertainmentPage(WebDriver driver, Properties properties) {
-        super(driver);
-        this.properties = properties;
-    }
 
     public HomeEntertainmentPage(WebDriver driver) {
         super(driver);
