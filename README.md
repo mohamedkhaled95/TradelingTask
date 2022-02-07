@@ -3,6 +3,7 @@
 
 ## Required installation 
 * setup jdk8
+* you must have Maven modules installed and configured on your computer.
 
 ## Tools and Technology :
 * Java (programming language)
