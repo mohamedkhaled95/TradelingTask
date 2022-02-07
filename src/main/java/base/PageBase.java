@@ -19,7 +19,6 @@ public class PageBase {
     private WebDriverWait wait;
 
 
-    private static Logger log = LogManager.getLogger(PageBase.class.getName());
 
 	public PageBase(WebDriver driver) {
 		this.driver = driver;
@@ -39,20 +38,6 @@ public class PageBase {
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
-    public void hoverElement(WebElement element ) {
-        Actions action = new Actions(driver);
-        action.moveToElement(element).perform();
- 
-
-    }
-
-    public void clickHoverElement(WebElement element ) {
-        Actions action = new Actions(driver);
-        hoverElement(element);
-        action.moveToElement(element).click().build().perform();
-
-
-    }
 
     public void typeText(By byElement, String text ) {
         waitElementToBeVisible(byElement);
