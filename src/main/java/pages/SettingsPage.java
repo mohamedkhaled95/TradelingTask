@@ -14,13 +14,7 @@ public class SettingsPage extends PageBase {
 
 By currencyDropDownList = By.id("icp-sc-dropdown");
 By saveChangesButton = By.xpath("//span[@id='icp-btn-save']//input");
-    private Properties properties;
 
-
-    public SettingsPage(WebDriver driver, Properties properties) {
-        super(driver);
-        this.properties = properties;
-    }
 
     public void selectCurrency(String currency)
     {
