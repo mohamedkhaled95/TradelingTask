@@ -1,9 +1,0 @@
-base\TestBase.class
-pages\TodayDealsPage.class
-pages\ProductDetailsPage.class
-utils\CreateRandomNumber.class
-pages\HomePage.class
-pages\SettingsPage.class
-base\PageBase.class
-pages\HomeEntertainmentPage.class
-testData\TestDataReader.class
